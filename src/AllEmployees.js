@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
+import EmployeeRow from './EmployeeRow'
 
 class AllEmployees extends React.Component{
 
@@ -7,7 +8,6 @@ class AllEmployees extends React.Component{
     {
         super(props);
         this.FetchDataFromApi = this.FetchDataFromApi.bind(this);
-        // this.CheckIfReaload = this.CheckIfReaload.bind(this);
         this.state={
             employees : [],
             isLoading : true,
@@ -28,15 +28,7 @@ class AllEmployees extends React.Component{
                     console.log(data);
                 let employees = data.map((empl)=>{
                     return(
-                        <div>
-                            <label>Id:</label>
-                            < div id="employee_id">{empl.id}</div>
-                            <label>Name:</label>
-                            <div id="employee_Name">{empl.name}</div>
-                            <label>Company:</label>
-                            <div id="employee_company">{empl.company}</div>
-                <br/>
-                        </div>
+                        <EmployeeRow name={empl.name} age ={empl.age} company={empl.company} id={empl.id} isActive={empl.isActive} fetchNewData={this.FetchDataFromApi} />
                     )
                 })
                 this.setState({employees : employees, isLoading: false})
@@ -44,15 +36,7 @@ class AllEmployees extends React.Component{
             )
 
     }
-    // CheckIfReaload()
-    // {
-    //     console.log('check if reload')
-    //     console.log(this.props.ReloadCallBack)
-    //     if(this.props.ReloadCallBack)
-    //     {
-    //         this.FetchDataFromApi();
-    //     }
-    // }
+
 
 render(){
     return(
