@@ -1,10 +1,10 @@
 import React from 'react'
-import AllEmployees from  './AllEmployees'
+import Employees from './Employees'
 
 const App = () => (
   <div>
-  <h1>Minimal React</h1> 
-  <AllEmployees /> 
+  <h1>Minimal React</h1>
+  <Employees />
   </div>
 )
 
