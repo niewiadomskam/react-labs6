@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import AddEmployeeForm from './AddEmployeeForm'
 
-class AddEmployee extends React.Component{
+class PageEmployee extends React.Component{
 
     constructor(props)
     {
@@ -53,8 +53,7 @@ class AddEmployee extends React.Component{
         }).then(function(data) {
             console.log(data);
         }).catch((err)=>console.log(err))       
-        this.setState({isSubmit: false});
-        this.props.ReloadEmployeesCallback();  
+        this.setState({isSubmit: false});  
         
     }
 
@@ -76,4 +75,4 @@ render(){
     );
 }
 }
-export default AddEmployee
+export default PageEmployee

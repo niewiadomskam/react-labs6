@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import EmployeeRow from './EmployeeRow'
 
-class AllEmployees extends React.Component{
+class PageEmployeesList extends React.Component{
 
     constructor(props)
     {
@@ -48,4 +48,4 @@ render(){
     );
 }
 }
-export default AllEmployees
+export default PageEmployeesList

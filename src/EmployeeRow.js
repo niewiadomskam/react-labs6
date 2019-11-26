@@ -1,6 +1,6 @@
 import React from 'react'
 
-class EmmployeeRow extends React.Component{
+class EmployeeRow extends React.Component{
     constructor(props){
         super(props);
         this.DeleteEmployee = this.DeleteEmployee.bind(this);
@@ -49,4 +49,4 @@ class EmmployeeRow extends React.Component{
 
 }
 
-export default EmmployeeRow
+export default EmployeeRow

@@ -1,8 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
-import AllEmployees from  './AllEmployees'
-import AddEmployee from './AddEmployee'
-import { callbackify } from 'util';
+import PageEmployeesList from  './PageEmployeesList'
+import PageEmployee from './PageEmployee'
 
 class Employees extends React.Component{
 
@@ -10,26 +9,15 @@ class Employees extends React.Component{
     {
         super();
 
-        this.ReloadEmployeesCallback = this.ReloadEmployeesCallback.bind(this);
-        this._child = React.createRef();
-
-
-        this.state={
-            ReloadEmployees : false,
-        }
     }
-    ReloadEmployeesCallback(e)
-    {
-        console.log('relaod callback');
-        this._child.current.FetchDataFromApi(); 
-    }
+    
 
 
     render(){
         return(
         <div>
-            <AllEmployees ref={this._child} />
-            <AddEmployee ReloadEmployeesCallback={this.ReloadEmployeesCallback} />
+            <PageEmployeesList />
+            <PageEmployee  />
         </div>
         );
     }
