@@ -1,6 +1,5 @@
 import React from 'react'
-import { render } from 'react-dom'
-import {Link} from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 
 
 class PageEmployee extends React.Component{
@@ -64,11 +63,13 @@ class PageEmployee extends React.Component{
               }
           }).then(function(data) {
               console.log(data);
-          }).catch((err)=>console.log(err)) 
+          }).catch((err)=>console.log(err)); 
+          this.props.history.push('/');
 
     }
     Cancel(e){        
     e.preventDefault();
+    this.props.history.push('/')
     }
 
 render(){
@@ -95,13 +96,11 @@ render(){
                 <input type="checkbox" defaultChecked onChange={this.IsActiveChange} />
             </label>
             <br/>
-            <Link to='/'>
             <button onClick={this.Submit}>Submit</button>
             <button onClick={this.Cancel}>Cancel</button>
-            </Link>
         </form>
         </div>
     );
 }
 }
-export default PageEmployee
+export default withRouter(PageEmployee)

@@ -50,5 +50,6 @@ module.exports = merge(base, {
     port: 3001,
     hot: true,
     stats: 'minimal',
+    historyApiFallback : true,
   },
 })
