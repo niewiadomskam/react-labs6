@@ -1,6 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
 import EmployeeRow from './EmployeeRow'
+import { Link } from 'react-router-dom'
 
 class PageEmployeesList extends React.Component{
 
@@ -43,6 +44,11 @@ render(){
         <div style={{border : 'solid', borderColor: 'pink', borderWidth: 'thin', padding: '1em', margin: '1em'}}>
         <div>
             {this.state.isLoading? 'Loading ....' : this.state.employees }            
+        </div>
+        <div>
+            <Link to='/new'>
+                <button>Create new employee</button>
+            </Link>
         </div>
         </div>
     );
