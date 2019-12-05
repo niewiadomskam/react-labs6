@@ -74,28 +74,38 @@ class PageEmployee extends React.Component{
 
 render(){
     return(
-        <div style={{border : 'solid', borderColor: 'blue', borderWidth: 'thin', padding: '1em', margin: '1em'}}>
+        <div style={{border : 'solid', borderColor: 'blue', borderWidth: 'thin', padding: '1em', margin: '1em', textAlign: 'center'}}>
         <form>
+            <div style={{margin: '10px'}}>
             <label>Name:
             <input type="text" defaultValue={this.state.name} onChange={this.NameChange} />
             </label>
             <br/>
+            </div>
+            <div style={{margin: '10px'}}>
             <label>Age:
                 <input typeof="number" defaultValue={this.state.age} onChange={this.AgeChange} />
             </label>
             <br/>
+            </div>
+            <div style={{margin: '10px'}}>
             <label>Comapny: 
                 <input typeof="text" defaultValue={this.state.company} onChange={this.CompanyChange} />
             </label>
             <br/>
+            </div>
+            <div style={{margin: '10px'}}>
             <label>Email: 
                 <input typeof="text" defaultValue={this.state.email} onChange={this.EmailChange} />
             </label>
             <br/>
+            </div>
+            <div style={{margin: '10px'}}>
             <label>Is active:
                 <input type="checkbox" defaultChecked onChange={this.IsActiveChange} />
             </label>
             <br/>
+            </div>
             <button onClick={this.Submit}>Submit</button>
             <button onClick={this.Cancel}>Cancel</button>
         </form>

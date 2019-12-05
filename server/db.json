@@ -129,10 +129,6 @@
       "email": "rosannanewman@exiand.com"
     },
     {
-      "newEmployeeStringified": "{\"isActive\":true,\"age\":3,\"name\":\"Jas\",\"company\":\"Przedszkole\",\"email\":\"jas@test.com\"}",
-      "id": "DnUO-MC"
-    },
-    {
       "isActive": true,
       "age": 3,
       "name": "JAs",
@@ -142,131 +138,11 @@
     },
     {
       "isActive": true,
-      "age": 22,
-      "name": "Karol",
-      "company": "Biedronka",
-      "email": "akrol@biedronka",
-      "id": "w9ssIIJ"
-    },
-    {
-      "isActive": true,
-      "age": 40,
-      "name": "Jan",
-      "company": "Lidl",
-      "email": "kierownik@lidl.com",
-      "id": "rPRKIMR"
-    },
-    {
-      "isActive": false,
-      "age": 38,
-      "name": "Krystian",
-      "company": "MostyKatowice",
-      "email": "mostowiec@test.com",
-      "id": "AtraPtG"
-    },
-    {
-      "isActive": false,
-      "age": 38,
-      "name": "Krystian",
-      "company": "MostyKatowice",
-      "email": "mostowiec@test.com",
-      "id": "6wPNikO"
-    },
-    {
-      "isActive": false,
-      "age": 38,
-      "name": "Krystian",
-      "company": "MostyKatowice",
-      "email": "mostowiec@test.com",
-      "id": "2rrWOON"
-    },
-    {
-      "isActive": false,
-      "age": 38,
-      "name": "Krystian",
-      "company": "MostyKatowice",
-      "email": "mostowiec@test.com",
-      "id": "f3-m6Qu"
-    },
-    {
-      "isActive": false,
-      "age": 38,
-      "name": "Krystian",
-      "company": "MostyKatowice",
-      "email": "mostowiec@test.com",
-      "id": "EnE0FHy"
-    },
-    {
-      "isActive": true,
-      "age": 34,
-      "name": "Janusz",
-      "company": "Budowa",
-      "email": "test/@test",
-      "id": "gfo9aDW"
-    },
-    {
-      "isActive": true,
-      "age": 22,
-      "name": "Jan",
-      "company": "Jakies",
-      "email": "test",
-      "id": "tBa1R7r"
-    },
-    {
-      "isActive": true,
-      "age": 22,
-      "name": "Jan",
-      "company": "Jakies",
-      "email": "test",
-      "id": "4umv5o3"
-    },
-    {
-      "isActive": true,
-      "age": 28,
-      "name": "Darek",
-      "company": "Budowa",
-      "email": "daro@test",
-      "id": "uvoMHdd"
-    },
-    {
-      "isActive": false,
-      "age": 24,
-      "name": "Janek",
-      "company": "Wiecznie sam",
-      "email": "smuteg@test",
-      "id": "1ao6O-x"
-    },
-    {
-      "isActive": true,
-      "age": 23,
-      "name": "Test",
-      "company": "Jakies",
-      "email": "edzie",
-      "id": "T3voEer"
-    },
-    {
-      "isActive": true,
-      "age": 22,
-      "name": "Ola",
-      "company": "Jakies",
-      "email": "test",
-      "id": "f3Lmi7K"
-    },
-    {
-      "isActive": true,
-      "age": 22,
-      "name": "Jan",
-      "company": "Jakies",
-      "email": "test",
-      "id": "rK_d_h3"
-    },
-    {
-      "isActive": true,
-      "age": 22,
-      "name": "Jan",
-      "company": "Jakies",
-      "email": "test",
-      "id": "7bfZDPH"
+      "age": 10,
+      "name": "Kasia",
+      "company": "Szkoła podstawowa",
+      "email": "test@tets.pl",
+      "id": "gG4C0UO"
     }
   ]
 }
